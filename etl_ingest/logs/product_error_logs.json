@@ -1,0 +1,352 @@
+[
+{
+    "chunk_error": "Database write error: relation \"s1_related_products\" does not exist\n",
+    "chunk": 0,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 1,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 1,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 1,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 2,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 2,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 2,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 3,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 3,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 3,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 4,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 4,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 4,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 5,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 5,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 5,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 6,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 6,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 6,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 7,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 7,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 7,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 8,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 8,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 8,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 9,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 9,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 9,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 10,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 10,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 10,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 11,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 11,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 11,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 12,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 12,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 12,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 13,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 13,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 13,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 14,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 14,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 14,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 15,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 15,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 15,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 16,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 16,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 16,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 17,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 17,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 17,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 18,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 18,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 18,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 19,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 19,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 19,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 20,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 20,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 20,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 21,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 21,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 21,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 22,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 22,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 22,
+    "entity": "retaled_products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 23,
+    "entity": "products"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 23,
+    "entity": "categories"
+},
+{
+    "chunk_error": "Database write error: current transaction is aborted, commands ignored until end of transaction block\n",
+    "chunk": 23,
+    "entity": "retaled_products"
+}
+]

@@ -1,0 +1,118 @@
+version: "3.8"
+
+networks:
+  etl_network:
+    driver: bridge
+
+volumes:
+  stage1_data:
+  stage2_data:
+  adw_data:
+
+services:
+  db_stage1:
+    image: postgres:latest
+    container_name: db_stage1
+    environment:
+      POSTGRES_DB: stage1
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./database_create_queries/stage1.sql:/docker-entrypoint-initdb.d/stage1.sql
+      - stage1_data:/var/lib/postgresql/data
+    networks:
+      - etl_network
+
+  db_stage2:
+    image: postgres:latest
+    container_name: db_stage2
+    environment:
+      POSTGRES_DB: stage2
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./database_create_queries/stage2.sql:/docker-entrypoint-initdb.d/stage2.sql
+      - stage2_data:/var/lib/postgresql/data
+    networks:
+      - etl_network
+
+  db_adw:
+    image: postgres:latest
+    container_name: db_adw
+    environment:
+      POSTGRES_DB: adw
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5434:5432"
+    volumes:
+      - ./database_create_queries/adw.sql:/docker-entrypoint-initdb.d/adw.sql
+      - adw_data:/var/lib/postgresql/data
+    networks:
+      - etl_network
+
+  etl_ingest:
+    build: ./etl_ingest
+    container_name: etl_ingest
+    depends_on:
+      - db_stage1
+      - db_adw
+    environment:
+      DB_STAGE1_HOST: db_stage1
+      DB_ADW_HOST: db_adw
+    entrypoint:
+      [
+        "sh",
+        "-c",
+        "/app/wait-for-it.sh db_stage1:5432 -- /app/wait-for-it.sh db_adw:5432 -- /app/etl_ingest.sh && touch /tmp/etl_ingest_done",
+      ]
+    networks:
+      - etl_network
+    volumes:
+      - ./etl_ingest:/app
+
+  etl_stage_1_to_stage_2:
+    build: ./etl_stage_1_to_stage_2
+    container_name: etl_stage_1_to_stage_2
+    depends_on:
+      - db_stage1
+      - db_stage2
+      - db_adw
+    environment:
+      DB_STAGE1_HOST: db_stage1
+      DB_STAGE2_HOST: db_stage2
+      DB_ADW_HOST: db_adw
+    entrypoint:
+      [
+        "sh",
+        "-c",
+        "/app/wait-for-it.sh db_stage1:5432 -- /app/wait-for-it.sh db_stage2:5432 -- /app/wait-for-it.sh db_adw:5432 -- /app/etl_stage1_to_stage2.sh && touch /tmp/etl_stage1_to_stage2_done",
+      ]
+    networks:
+      - etl_network
+    volumes:
+      - ./etl_stage_1_to_stage_2:/app
+
+  etl_stage_2_to_adw:
+    build: ./etl_stage_2_to_adw
+    container_name: etl_stage_2_to_adw
+    depends_on:
+      - db_stage2
+      - db_adw
+    environment:
+      DB_STAGE2_HOST: db_stage2
+      DB_ADW_HOST: db_adw
+    entrypoint:
+      [
+        "sh",
+        "-c",
+        "/app/wait-for-it.sh db_stage2:5432 -- /app/wait-for-it.sh db_adw:5432 -- /app/etl_stage_2_to_adw.sh && touch /tmp/etl_stage2_to_adw_done",
+      ]
+    networks:
+      - etl_network
+    volumes:
+      - ./etl_stage_2_to_adw:/app

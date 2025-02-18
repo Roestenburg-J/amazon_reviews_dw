@@ -1,0 +1,14 @@
+./data
+
+./etl_ingest/ingest/__pycache__
+./etl_ingest/utils/__pycache__
+./etl_ingest/__pycache__
+./etl_ingest/data/.
+
+./etl_stage_1_to_stage_2/controllers/__pycache__
+./etl_stage_1_to_stage_2/utils/__pycache__
+./etl_stage_1_to_stage_2/__pycache__
+
+./etl_stage_2_to_adw/controllers/__pycache__
+./etl_stage_2_to_adw/utils/__pycache__
+./etl_stage_2_to_adw/__pycache__
